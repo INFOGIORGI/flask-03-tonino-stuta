@@ -2,3 +2,24 @@
 {%block link%} 
 <li><a href= "https://it.wikipedia.org/wiki/Pagina_principale">Wikipedia</a></li>
 {%endblock%}
+{%block container%}
+
+<table> 
+    <tr>
+        <td>Nome</td>
+        <td>Cognome</td>
+        <td>Età</td>
+        <td>Macchina</td>
+    </tr>
+    
+    {%for i in cristiani%}
+    <tr>
+        <td>{{i[0]}} </td>
+        <td>{{i[1]}} </td>
+        <td>{{i[2]}} </td>
+        <td>{{i[3]}} </td>
+    </tr>
+        {%endfor%}
+
+</table>
+{%endblock%}

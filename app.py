@@ -7,5 +7,6 @@ def home():
     return render_template("home.html")
 @app.route("/details")
 def details():
-    return render_template("details.html")
-app.run()
+    cristiani = (("Daniel", "Calabrese", 18, "Volkswagen UP!"), ("Antonio", "Iaia", 18, "Citroen C3"), ("Angelo", "Basile", 18, "Opel Corsa") )
+    return render_template("details.html", cristiani = cristiani)
+app.run(debug="true")
