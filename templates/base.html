@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <ul>
+        <li><a href= "{{url_for('home')}}">Home</a></li>
+        <li><a href= "{{url_for('details')}}">Details</a></li>
+        {%block link%} {%endblock%}
+    </ul>
+    {%block container%} {%endblock%}
+</body>
+</html>
