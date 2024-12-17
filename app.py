@@ -5,8 +5,13 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return render_template("home.html")
-@app.route("/details")
-def details():
-    cristiani = (("Daniel", "Calabrese", 18, "Volkswagen UP!"), ("Antonio", "Iaia", 18, "Citroen C3"), ("Angelo", "Basile", 18, "Opel Corsa") )
-    return render_template("details.html", cristiani = cristiani)
+@app.route("/prodotti")
+def prodotti():
+    prodotti = (("Pomodoro", "S1", 18), ("Salsa", "S2", 17), ("Formaggio", "S3", 14) )
+    return render_template("details.html", prodotti = prodotti)
 app.run(debug="true")
+
+# @app.route("/prodottiScaffale/<scaffale>")
+# def dettagliProdotti(scaffale)
+    
+    

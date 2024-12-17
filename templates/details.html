@@ -6,18 +6,16 @@
 
 <table> 
     <tr>
-        <td>Nome</td>
-        <td>Cognome</td>
-        <td>Età</td>
-        <td>Macchina</td>
+        <td>Prodotto</td>
+        <td>Scaffale</td>
+        <td>Prezzo</td>
     </tr>
     
-    {%for i in cristiani%}
+    {%for i in prodotti%}
     <tr>
         <td>{{i[0]}} </td>
         <td>{{i[1]}} </td>
         <td>{{i[2]}} </td>
-        <td>{{i[3]}} </td>
     </tr>
         {%endfor%}
 
