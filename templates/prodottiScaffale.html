@@ -1,0 +1,18 @@
+{%extends "base.html"%}
+{%block container%} 
+<h3>{{tuple[1]}}</h3>
+
+<table>
+    <tr>
+        <td>Prodotto</td>
+        <td>Prezzo</td>
+    </tr>
+
+    {%for i in tuple%}
+    <tr>
+        <td>{{i[0]}}</td>
+        <td>{{i[2]}}</td>
+    </tr>
+    {%endfor%}
+</table>
+{%endblock%}
